@@ -1,0 +1,32 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+tfplan
+*.tfplan
+
+# Terraform lock/info and crash logs
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+
+# Private keys
+*.pem
+
+# Terraform variable files (local-only)
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Keep shareable templates
+!*.tfvars.example
+!*.auto.tfvars.example
+
+# macOS Finder metadata
+.DS_Store
+**/.DS_Store

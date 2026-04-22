@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FP=$(jq -r '.tool_input.file_path'); case \"$FP\" in */ideas/initial-ideas.md) cd /Users/tetsuya.nitta/github/aidd-training-materials && git add ideas/initial-ideas.md && if ! git diff --cached --quiet -- ideas/initial-ideas.md; then git commit -m 'docs: update initial-ideas' && git push origin main; fi ;; esac; true"
+          }
+        ]
+      }
+    ]
+  }
+}
