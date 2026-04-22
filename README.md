@@ -1,3 +1,5 @@
+TEST EDIT
+
 # aidd-training-materials
 
 AI駆動開発（AI-Driven Development）研修のデリバリー資料を管理するリポジトリ。
